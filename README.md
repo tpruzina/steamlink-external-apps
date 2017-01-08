@@ -22,7 +22,7 @@ You will need sshd access to your steamlink, feel free to follow guide on how to
 
 http://mcd1992.blogspot.cz/2015/10/alright-this-was-lot-easier-than-i.html
 
-To get use bash automatically upon ssh login either copy ```./home/steam/.profile``` or modify ```/etc/passwd```.
+To get use bash automatically upon ssh login either copy ```./home/steam/.profile``` or modify ```/etc/passwd``` (former is probably preferable since /etc/passwd change might modify system behavior outside login shell - not tested).
 
 If you get linking problems with external libraries please run ```ldconfig``` in your ssh shell.
 
