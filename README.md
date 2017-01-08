@@ -5,6 +5,7 @@ BINARIES:
 * bash-4.4 (https://www.gnu.org/software/bash/)
 * ethtool-4.8 (http://sourceforge.net/projects/gkernel/)
 * "vim" wrapper for busybox
+* ... (missing some nice commandline utility? create Issue) 
 
 LIBRARIES: 
 * libncursesw-5.9 (needed for htop, http://invisible-island.net/ncurses/)
