@@ -18,10 +18,13 @@ Just copy files via scp:
 ``` scp -r etc usr root@<steamlink_ip:/```
 
 You will need sshd access to your steamlink, feel free to follow guide on how to go about that here:
+
 http://mcd1992.blogspot.cz/2015/10/alright-this-was-lot-easier-than-i.html
 
-To get use bash automatically upon ssh login either copy ./home/steam/.profile or modify /etc/passwd .
+To get use bash automatically upon ssh login either copy ```./home/steam/.profile``` or modify ```/etc/passwd```.
+
 If you get linking problems with external libraries please run ```ldconfig``` it your ssh shell.
+
 If something else doesn't work, please file a issue report.
 
 WARNING ABOUT LICENSING ISSUES:
