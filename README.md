@@ -24,7 +24,7 @@ http://mcd1992.blogspot.cz/2015/10/alright-this-was-lot-easier-than-i.html
 
 To get use bash automatically upon ssh login either copy ```./home/steam/.profile``` or modify ```/etc/passwd```.
 
-If you get linking problems with external libraries please run ```ldconfig``` it your ssh shell.
+If you get linking problems with external libraries please run ```ldconfig``` in your ssh shell.
 
 If something else doesn't work, please file a issue report.
 
