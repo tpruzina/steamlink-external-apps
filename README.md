@@ -1,5 +1,4 @@
-Various (crosscompiled) binaries that I've found useful to add to steamlink
-
+![screenshot of htop running on bash in ssh client](https://cloud.githubusercontent.com/assets/1160582/21749690/0319b792-d5a4-11e6-963c-0bcbb695d354.png)
 BINARIES:
 
 * htop-2.0.2 (https://hisham.hm/htop/)
@@ -10,8 +9,6 @@ BINARIES:
 LIBRARIES: 
 * libncursesw-5.9 (needed for htop, http://invisible-island.net/ncurses/)
 * libtinfo-5.9 (needed for htop, https://www.gnu.org/software/ncurses/)
-
-![screenshot of htop running on bash in ssh client](https://cloud.githubusercontent.com/assets/1160582/21749690/0319b792-d5a4-11e6-963c-0bcbb695d354.png)
 
 INSTALLATION INSTRUCTIONS:
 
