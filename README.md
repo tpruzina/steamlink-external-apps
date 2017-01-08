@@ -1,16 +1,15 @@
-Various (crosscompiled) binaries that I've found useful to add to steamlink
-
+![screenshot of htop running on bash in ssh client](https://cloud.githubusercontent.com/assets/1160582/21749690/0319b792-d5a4-11e6-963c-0bcbb695d354.png)
 BINARIES:
 
 * htop-2.0.2 (https://hisham.hm/htop/)
 * bash-4.4 (https://www.gnu.org/software/bash/)
 * ethtool-4.8 (http://sourceforge.net/projects/gkernel/)
 * "vim" wrapper for busybox
+* ... (missing some nice commandline utility? create Issue) 
 
 LIBRARIES: 
 * libncursesw-5.9 (needed for htop, http://invisible-island.net/ncurses/)
 * libtinfo-5.9 (needed for htop, https://www.gnu.org/software/ncurses/)
-
 
 INSTALLATION INSTRUCTIONS:
 
@@ -18,10 +17,13 @@ Just copy files via scp:
 ``` scp -r etc usr root@<steamlink_ip:/```
 
 You will need sshd access to your steamlink, feel free to follow guide on how to go about that here:
+
 http://mcd1992.blogspot.cz/2015/10/alright-this-was-lot-easier-than-i.html
 
-To get use bash automatically upon ssh login either copy ./home/steam/.profile or modify /etc/passwd .
-If you get linking problems with external libraries please run ```ldconfig``` it your ssh shell.
+To get use bash automatically upon ssh login either copy ```./home/steam/.profile``` or modify ```/etc/passwd``` (former is probably preferable since /etc/passwd change might modify system behavior outside login shell - not tested).
+
+If you get linking problems with external libraries please run ```ldconfig``` in your ssh shell.
+
 If something else doesn't work, please file a issue report.
 
 WARNING ABOUT LICENSING ISSUES:
