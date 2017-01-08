@@ -19,6 +19,8 @@ Just copy files via scp:
 ``` scp -r etc usr root@<steamlink_ip:/```
 
 To get use bash automatically upon ssh login either copy ./home/steam/.profile or modify /etc/passwd .
+If you get linking problems with external libraries please run ```ldconfig``` it your ssh shell.
+If something else doesn't work, please file a issue report.
 
 WARNING ABOUT LICENSING ISSUES:
 
