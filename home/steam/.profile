@@ -1,3 +1,5 @@
+export TERMINFO=/etc/terminfo
+
 case $- in
   *i*)
     # Interactive session. Try switching to bash.
