@@ -4,13 +4,14 @@ BINARIES:
 * htop-2.0.2 (https://hisham.hm/htop/)
 * bash-4.4 (https://www.gnu.org/software/bash/)
 * ethtool-4.8 (http://sourceforge.net/projects/gkernel/)
+* tmux-1.9-6 (https://github.com/ThomasAdam/tmux, http://tmux.sf.net)
 * "vim" wrapper for busybox
 * ... (missing some nice commandline utility? create Issue) 
 
 LIBRARIES: 
 * libncursesw-5.9 (needed for htop, http://invisible-island.net/ncurses/)
-* libtinfo-5.9 (needed for htop, https://www.gnu.org/software/ncurses/)
-
+* libtinfo-5.9 (needed for htop&tmux, https://www.gnu.org/software/ncurses/)
+* libevent (needed for tmux, http://www.monkey.org/~provos/libevent/)
 INSTALLATION INSTRUCTIONS:
 
 Just copy files via scp:
