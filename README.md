@@ -1,4 +1,4 @@
-![screenshot of htop running on bash in ssh client](https://cloud.githubusercontent.com/assets/1160582/21749690/0319b792-d5a4-11e6-963c-0bcbb695d354.png)
+![screenshot of htop running on tmux+bash in ssh client](https://cloud.githubusercontent.com/assets/1160582/21764312/b1fbc84a-d662-11e6-931d-b3b674470019.png)
 BINARIES:
 
 * htop-2.0.2 (https://hisham.hm/htop/)
