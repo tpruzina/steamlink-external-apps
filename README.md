@@ -7,6 +7,7 @@ Binaries included in this repository
 * bash-4.4 (https://www.gnu.org/software/bash/)
 * ethtool-4.8 (http://sourceforge.net/projects/gkernel/)
 * tmux-1.9-6 (https://github.com/ThomasAdam/tmux, http://tmux.sf.net)
+* tor-0.3.0.1-alpha (https://www.torproject.org/)
 * "vim" wrapper for busybox
 * ... (missing some nice commandline utility? create Issue) 
 
@@ -28,6 +29,28 @@ You will need sshd access to your steamlink, feel free to follow guide on how to
 http://mcd1992.blogspot.cz/2015/10/alright-this-was-lot-easier-than-i.html
 
 To get use bash automatically upon ssh login either copy ```./home/steam/.profile``` or modify ```/etc/passwd``` (former is probably preferable since /etc/passwd change might modify system behavior outside login shell - not tested).
+
+Tor proxy
+=========
+
+To run tor proxy automatically, add following to your ```/home/steam/rc.local```:
+
+```
+#make rootfs rw
+mount -o remount,rw /
+
+#make sure we have working dns services
+echo "nameserver 8.8.8.8
+nameserver 127.0.0.1
+nameserver ::1" >> /etc/resolv.conf
+
+#make sure network time isn't 1970
+ln -s /etc/ntpd.conf /etc/ntp.conf >/dev/null 2>&1
+ntpd -q
+
+nice -n 10 /usr/local/sbin/tor -f /etc/torrc >/tmp/tor.log 2>&1 &
+```
+
 
 Known issues
 ============
