@@ -51,6 +51,8 @@ ntpd -q
 nice -n 10 /usr/local/sbin/tor -f /etc/torrc >/tmp/tor.log 2>&1 &
 ```
 
+Please note that steamlink only has about 200MB of RAM available which isn't enough to run Tor as relay/bridge,
+memory usage in this case might cause your device to run out of memory (proxy client should be fine - steamlink can run at roughly ~20Mbit speeds).
 
 Known issues
 ============
