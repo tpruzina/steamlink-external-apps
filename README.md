@@ -9,12 +9,13 @@ Binaries included in this repository
 * tmux-1.9-6 (https://github.com/ThomasAdam/tmux, http://tmux.sf.net)
 * tor-0.3.0.1-alpha (https://www.torproject.org/)
 * "vim" wrapper for busybox
+* nano-2.7.4 (https://www.nano-editor.org/)
 * ... (missing some nice commandline utility? create Issue) 
 
 Libraries needed for some binaries
 ----------------------------------
 
-* libncursesw-5.9 (needed for htop, http://invisible-island.net/ncurses/)
+* libncursesw-5.9 (needed for htop&nano, http://invisible-island.net/ncurses/)
 * libtinfo-5.9 (needed for htop&tmux, https://www.gnu.org/software/ncurses/)
 * libevent (needed for tmux, http://www.monkey.org/~provos/libevent/)
 
