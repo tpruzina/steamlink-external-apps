@@ -12,7 +12,7 @@ Binaries included in this repository
 * nano-2.7.4 (https://www.nano-editor.org/)
 * ... (missing some nice commandline utility? create Issue) 
 
-Libraries needed for some binaries
+Libraries included for some binaries
 ----------------------------------
 
 * libncursesw-5.9 (needed for htop&nano, http://invisible-island.net/ncurses/)
